@@ -16,19 +16,15 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    "alligator/accent.vim",
-    opts = {
-      accent_colour = "green",
-    },
-    config = function(_, opts)
-      vim.g.accent_colour = opts.accent_colour
-    end,
-  },
   "romainl/Apprentice",
   "chase/focuspoint-vim",
 
   -- Other ui
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    opts = {},
+    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
+  },
   "xiyaowong/nvim-transparent",
   {
     "folke/zen-mode.nvim",
